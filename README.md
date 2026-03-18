@@ -68,9 +68,9 @@ We welcome contributions to the BibleQuotes app! If you'd like to contribute, pl
 
 ## Author Info
 
--   **Your Name**
-    -   LinkedIn: [@YourLinkedInUsername](https://www.linkedin.com/in/YourLinkedInUsername)
-    -   X (formerly Twitter): [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
+-   **Olateju Olamide --TejHacks**
+    -   LinkedIn: [@YourLinkedInUsername](https://www.linkedin.com/in/olateju-olamide-22314a292/)
+    -   X (formerly Twitter): [@YourTwitterHandle](https://x.com/OlatejuOlamid10)
 
 ---
 
