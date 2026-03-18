@@ -1,19 +1,20 @@
-# 📖 BibleQuotes App
+# ✨ BibleQuotes Mobile App
 
 ## Overview
-BibleQuotes is a modern mobile application built with React Native and Expo, delivering daily inspirational Bible quotes. Users can easily swipe through a curated collection of quotes, providing a seamless and uplifting experience on both iOS and Android devices.
+BibleQuotes is an elegantly designed mobile application built with React Native and Expo, offering users a curated collection of inspiring Bible quotes. It features a beautiful, responsive interface with smooth navigation and custom typography, providing a serene experience for daily reflection.
 
 ## Features
-- **Daily Inspiration**: Access a collection of profound Bible quotes anytime, anywhere.
-- **Intuitive Swipe Navigation**: Effortlessly swipe left or right to discover new quotes.
-- **Clean and Responsive UI**: Enjoy a beautifully designed interface powered by NativeWind and Tailwind CSS.
-- **Cross-Platform Compatibility**: Available on iOS, Android, and Web platforms through Expo.
-- **Offline Access**: Quotes are readily available, even without an internet connection.
+- **Dynamic Quote Display**: Seamlessly browse through a rich collection of inspiring Bible quotes.
+- **Intuitive Navigation**: Effortlessly swipe left/right or use dedicated navigation buttons to move between quotes.
+- **Elegant UI/UX**: Experience a visually appealing design with custom fonts and subtle decorative elements, reminiscent of classic scripture.
+- **Responsive Design**: Enjoy a consistent and beautiful experience across various mobile devices and screen sizes.
+- **Custom Typography**: Utilizes `CinzelDecorative` and `EBGaramond` fonts to enhance the classic aesthetic.
 
 ## Getting Started
 
+Follow these steps to set up and run the BibleQuotes app on your local machine.
+
 ### Installation
-To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the Repository**:
     ```bash
@@ -28,59 +29,54 @@ To get a local copy up and running, follow these simple steps.
     ```
 3.  **Start the Expo Development Server**:
     ```bash
+    npm start
+    # or
     expo start
     ```
-    This will open a new tab in your browser with the Expo Developer Tools.
+    This will open the Expo Dev Tools in your browser. You can then scan the QR code with your phone (using the Expo Go app) or run it on an Android/iOS emulator.
 
-### Usage
-Once the Expo development server is running, you can launch the app on various platforms:
+## Usage
 
--   **On an emulator/simulator**:
-    *   Press `a` in the terminal for Android.
-    *   Press `i` in the terminal for iOS.
--   **On a physical device**:
-    *   Scan the QR code displayed in your terminal or browser using the Expo Go app.
--   **In a web browser**:
-    *   Press `w` in the terminal.
+Once the app is running, you will be greeted with the main screen displaying a Bible quote.
 
-### Interacting with the App
-Upon launching, you will see a Bible quote displayed on a card.
--   **Swipe Left or Right**: To view the next inspirational quote, simply swipe your finger across the quote card either to the left or to the right. The app will automatically cycle through the collection of quotes.
+-   **Navigate Quotes**:
+    -   **Swipe**: Swipe left on the quote card to go to the next quote, and swipe right to go to the previous quote.
+    -   **Navigation Buttons**: Use the left (`<`) and right (`>`) arrow buttons located below the quote card to navigate through the quotes.
+-   **Read and Reflect**: Enjoy the curated collection of quotes, presented with elegant typography and a calming visual theme.
 
 ## Technologies Used
 
-| Technology         | Description                                     | Link                                                            |
-| :----------------- | :---------------------------------------------- | :-------------------------------------------------------------- |
-| **React Native**   | Framework for building native mobile apps       | [React Native](https://reactnative.dev/)                        |
-| **Expo**           | Platform for universal React applications       | [Expo](https://expo.dev/)                                       |
-| **TypeScript**     | Superset of JavaScript with static typing       | [TypeScript](https://www.typescriptlang.org/)                   |
-| **NativeWind**     | Tailwind CSS for React Native                   | [NativeWind](https://www.nativewind.dev/)                       |
-| **Tailwind CSS**   | Utility-first CSS framework                     | [Tailwind CSS](https://tailwindcss.com/)                        |
+| Technology         | Description                                        | Link                                                                      |
+| :----------------- | :------------------------------------------------- | :------------------------------------------------------------------------ |
+| **React Native**   | Open-source UI software framework for mobile apps. | [React Native](https://reactnative.dev/)                                  |
+| **Expo**           | Framework for universal React applications.        | [Expo](https://expo.dev/)                                                 |
+| **TypeScript**     | Superset of JavaScript that adds static typing.    | [TypeScript](https://www.org/)                                          |
+| **NativeWind**     | Tailwind CSS for React Native.                     | [NativeWind](https://www.nativewind.dev/)                                 |
+| **React Native SVG** | SVG support for React Native.                      | [React Native SVG](https://github.com/react-native-svg/react-native-svg) |
+| **Expo Font**      | Load custom fonts for your app.                    | [Expo Font](https://docs.expo.dev/versions/latest/sdk/font/)              |
 
 ## Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-To contribute:
+We welcome contributions to the BibleQuotes app! If you'd like to contribute, please follow these guidelines:
 
-1.  ✨ Fork the Project
-2.  🌿 Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  📝 Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  🚀 Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  📬 Open a Pull Request
+*   💡 **Fork the repository**: Start by forking the project to your GitHub account.
+*   🌿 **Create a new branch**: Make your changes in a new branch, e.g., `feature/add-new-quotes` or `bugfix/fix-navigation`.
+*   🛠️ **Implement your changes**: Ensure your code adheres to the project's coding style.
+*   ✅ **Test thoroughly**: Verify that your changes work as expected and don't introduce new issues.
+*   ⬆️ **Commit your changes**: Write clear and descriptive commit messages.
+*   📬 **Open a Pull Request**: Submit a pull request to the `main` branch with a detailed description of your changes.
 
 ## Author Info
 
-**Your Name**
--   LinkedIn: [https://www.linkedin.com/in/your-username](https://www.linkedin.com/in/your-username)
--   X (formerly Twitter): [@your_x_handle](https://twitter.com/your_x_handle)
+-   **Your Name**
+    -   LinkedIn: [@YourLinkedInUsername](https://www.linkedin.com/in/YourLinkedInUsername)
+    -   X (formerly Twitter): [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
 
 ---
 
-[![Expo](https://img.shields.io/badge/Made%20with-Expo-000020.svg?style=for-the-badge&logo=expo)](https://expo.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
-[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License: Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg)](http://unlicense.org/)
-[![Project Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)](https://github.com/tejHacks/christian-quotes-mobile-app)
-
+[![Expo](https://img.shields.io/badge/Expo-1B1F2D?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![NativeWind](https://img.shields.io/badge/NativeWind-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://www.nativewind.dev/)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](https://github.com/tejHacks/christian-quotes-mobile-app/actions)
 [![Readme was generated by Dokugen](https://img.shields.io/badge/Readme%20was%20generated%20by-Dokugen-brightgreen)](https://www.npmjs.com/package/dokugen)

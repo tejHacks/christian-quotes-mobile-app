@@ -27,6 +27,6 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": ["expo-sharing"]
+    "plugins": ["expo-sharing", "expo-font"]
   }
 }

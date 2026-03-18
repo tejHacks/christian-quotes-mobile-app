@@ -16,7 +16,7 @@ export const quotes = [
     author: "Kenneth E. Hagin",
   },
   {
-    text: "The believer’s authority is in Christ.",
+    text: "The believer's authority is in Christ.",
     author: "Kenneth E. Hagin",
   },
   {
