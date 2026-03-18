@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Animated,
+  SafeAreaView,
 } from "react-native";
 import { useState, useRef } from "react";
 import { useFonts } from "expo-font";
@@ -21,32 +22,6 @@ function CornerOrnament() {
       <Path d="M4 40 L4 4 L40 4" stroke="#d4a843" strokeWidth={0.5} />
       <Circle cx={4} cy={4} r={3} fill="#d4a843" />
     </Svg>
-  );
-}
-
-function NavButton({
-  onPress,
-  direction,
-}: {
-  onPress: () => void;
-  direction: "left" | "right";
-}) {
-  return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={styles.navBtn}
-      activeOpacity={0.7}
-    >
-      <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
-        <Polyline
-          points={direction === "left" ? "15 18 9 12 15 6" : "9 18 15 12 9 6"}
-          stroke="#8a6a28"
-          strokeWidth={1.5}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </Svg>
-    </TouchableOpacity>
   );
 }
 
@@ -96,85 +71,120 @@ export default function App() {
   const quote = quotes[index];
 
   return (
-    <View style={styles.app}>
-      {/* Corner ornaments */}
-      <View style={[styles.corner, styles.cornerTL]}>
-        <CornerOrnament />
-      </View>
-      <View
-        style={[
-          styles.corner,
-          styles.cornerTR,
-          { transform: [{ scaleX: -1 }] },
-        ]}
-      >
-        <CornerOrnament />
-      </View>
-      <View
-        style={[
-          styles.corner,
-          styles.cornerBL,
-          { transform: [{ scaleY: -1 }] },
-        ]}
-      >
-        <CornerOrnament />
-      </View>
-      <View
-        style={[
-          styles.corner,
-          styles.cornerBR,
-          { transform: [{ scaleX: -1 }, { scaleY: -1 }] },
-        ]}
-      >
-        <CornerOrnament />
-      </View>
-
-      {/* Title */}
-      <Text style={styles.appTitle}>Bible Quotes</Text>
-
-      {/* Gold divider */}
-      <View style={styles.dividerRow}>
-        <View style={styles.dividerLineLeft} />
-        <View style={styles.diamond} />
-        <View style={styles.dividerLineRight} />
-      </View>
-
-      {/* Animated card */}
-      <Animated.View
-        style={[
-          styles.cardWrap,
-          { transform: [{ translateX: slideAnim }], opacity: opacityAnim },
-        ]}
-      >
-        <QuoteCard
-          text={quote.text}
-          author={quote.author}
-          onNext={() => animateAndGo(1)}
-          onPrev={() => animateAndGo(-1)}
-        />
-      </Animated.View>
-
-      {/* Nav row */}
-      <View style={styles.navRow}>
-        <NavButton direction="left" onPress={() => animateAndGo(-1)} />
-        <View style={styles.dotsRow}>
-          {quotes.map((_, i) => (
-            <View
-              key={i}
-              style={[styles.dot, i === index && styles.dotActive]}
-            />
-          ))}
+    <SafeAreaView style={styles.safe}>
+      <View style={styles.app}>
+        {/* Corner ornaments */}
+        <View style={[styles.corner, styles.cornerTL]}>
+          <CornerOrnament />
         </View>
-        <NavButton direction="right" onPress={() => animateAndGo(1)} />
-      </View>
+        <View
+          style={[
+            styles.corner,
+            styles.cornerTR,
+            { transform: [{ scaleX: -1 }] },
+          ]}
+        >
+          <CornerOrnament />
+        </View>
+        <View
+          style={[
+            styles.corner,
+            styles.cornerBL,
+            { transform: [{ scaleY: -1 }] },
+          ]}
+        >
+          <CornerOrnament />
+        </View>
+        <View
+          style={[
+            styles.corner,
+            styles.cornerBR,
+            { transform: [{ scaleX: -1 }, { scaleY: -1 }] },
+          ]}
+        >
+          <CornerOrnament />
+        </View>
 
-      {/* Swipe hint */}
-      <Text style={styles.hint}>Swipe or use arrows to navigate</Text>
-    </View>
+        {/* Title */}
+        <Text style={styles.appTitle}>Bible Quotes</Text>
+
+        {/* Gold divider */}
+        <View style={styles.dividerRow}>
+          <View style={styles.dividerLine} />
+          <View style={styles.diamond} />
+          <View style={styles.dividerLine} />
+        </View>
+
+        {/* Animated card */}
+        <Animated.View
+          style={[
+            styles.cardWrap,
+            { transform: [{ translateX: slideAnim }], opacity: opacityAnim },
+          ]}
+        >
+          <QuoteCard
+            text={quote.text}
+            author={quote.author}
+            onNext={() => animateAndGo(1)}
+            onPrev={() => animateAndGo(-1)}
+          />
+        </Animated.View>
+
+        {/* Nav row — arrows locked tight around counter */}
+        <View style={styles.navRow}>
+          <TouchableOpacity
+            onPress={() => animateAndGo(-1)}
+            style={styles.navBtn}
+            activeOpacity={0.7}
+          >
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
+              <Polyline
+                points="15 18 9 12 15 6"
+                stroke="#8a6a28"
+                strokeWidth={1.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </Svg>
+          </TouchableOpacity>
+
+          <View style={styles.counter}>
+            <Text style={styles.counterText}>
+              {index + 1}
+              <Text style={styles.counterDivider}> / </Text>
+              {quotes.length}
+            </Text>
+          </View>
+
+          <TouchableOpacity
+            onPress={() => animateAndGo(1)}
+            style={styles.navBtn}
+            activeOpacity={0.7}
+          >
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
+              <Polyline
+                points="9 18 15 12 9 6"
+                stroke="#8a6a28"
+                strokeWidth={1.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </Svg>
+          </TouchableOpacity>
+        </View>
+
+        {/* Swipe hint */}
+        <Text style={styles.hint}>Swipe or use arrows to navigate</Text>
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safe: {
+    flex: 1,
+    backgroundColor: "#1e1610",
+  },
   app: {
     flex: 1,
     backgroundColor: "#1e1610",
@@ -209,13 +219,7 @@ const styles = StyleSheet.create({
     marginBottom: 32,
     gap: 10,
   },
-  dividerLineLeft: {
-    flex: 1,
-    height: 1,
-    backgroundColor: "#8a6a28",
-    opacity: 0.5,
-  },
-  dividerLineRight: {
+  dividerLine: {
     flex: 1,
     height: 1,
     backgroundColor: "#8a6a28",
@@ -234,42 +238,43 @@ const styles = StyleSheet.create({
   navRow: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 28,
-    gap: 20,
+    marginTop: 24,
+    gap: 0,
   },
   navBtn: {
     width: 40,
     height: 40,
-    borderRadius: 20,
     borderWidth: 1,
     borderColor: "rgba(212,168,67,0.25)",
     backgroundColor: "rgba(212,168,67,0.05)",
     alignItems: "center",
     justifyContent: "center",
   },
-  dotsRow: {
-    flexDirection: "row",
-    gap: 6,
+  counter: {
+    height: 40,
+    paddingHorizontal: 16,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderColor: "rgba(212,168,67,0.25)",
+    backgroundColor: "rgba(212,168,67,0.03)",
     alignItems: "center",
+    justifyContent: "center",
   },
-  dot: {
-    width: 4,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: "#8a6a28",
-    opacity: 0.35,
+  counterText: {
+    fontFamily: "CinzelDecorative-Regular",
+    fontSize: 11,
+    color: "#d4a843",
+    letterSpacing: 1,
   },
-  dotActive: {
-    opacity: 1,
-    backgroundColor: "#d4a843",
-    transform: [{ scale: 1.4 }],
+  counterDivider: {
+    color: "#8a6a28",
   },
   hint: {
     fontFamily: "EBGaramond-Italic",
     fontStyle: "italic",
     fontSize: 12,
     color: "#8a6a28",
-    marginTop: 16,
+    marginTop: 14,
     opacity: 0.6,
     letterSpacing: 0.5,
   },
