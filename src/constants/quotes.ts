@@ -19,6 +19,82 @@ export const quotes = [
     text: "The believer's authority is in Christ.",
     author: "Kenneth E. Hagin",
   },
+  // John Wesley
+  {
+    text: "Do all the good you can, by all the means you can, in all the ways you can, in all the places you can, at all the times you can, to all the people you can, as long as ever you can.",
+    author: "John Wesley",
+  },
+  {
+    text: "What one generation tolerates, the next generation will embrace.",
+    author: "John Wesley",
+  },
+  {
+    text: "The church changes the world not by making converts but by making disciples.",
+    author: "John Wesley",
+  },
+  { text: "Prayer is where the action is.", author: "John Wesley" },
+  {
+    text: "Proceed with much prayer, and your way will be made plain.",
+    author: "John Wesley",
+  },
+  {
+    text: "God does nothing except in answer to prayer.",
+    author: "John Wesley",
+  },
+  {
+    text: "Let your words be the genuine picture of your heart.",
+    author: "John Wesley",
+  },
+  {
+    text: "Earn all you can, give all you can, save all you can.",
+    author: "John Wesley",
+  },
+  {
+    text: "I set myself on fire and people come to watch me burn.",
+    author: "John Wesley",
+  },
+
+  // Charles Finney
+  {
+    text: "Revival is no more a miracle than a crop of wheat.",
+    author: "Charles Finney",
+  },
+  {
+    text: "Unless I had the spirit of prayer, I could do nothing.",
+    author: "Charles Finney",
+  },
+  {
+    text: "A revival of religion presupposes a declension.",
+    author: "Charles Finney",
+  },
+  {
+    text: "God will not send revival to a church that is at ease in Zion.",
+    author: "Charles Finney",
+  },
+  {
+    text: "The church must take right ground in regard to politics.",
+    author: "Charles Finney",
+  },
+  {
+    text: "Sanctification is not an attainment but a state of consecration.",
+    author: "Charles Finney",
+  },
+  {
+    text: "A Christian is one who follows Christ — in his spirit, his temper, his character.",
+    author: "Charles Finney",
+  },
+  {
+    text: "You need not go to heaven to find God, if you will only look within your own heart.",
+    author: "Charles Finney",
+  },
+  {
+    text: "Sinners cannot be kept out of hell without prayer.",
+    author: "Charles Finney",
+  },
+  {
+    text: "The world is not converted by theology but by holiness.",
+    author: "Charles Finney",
+  },
   {
     text: "Confession builds the road over which faith carries its mighty cargo.",
     author: "Kenneth E. Hagin",
@@ -26,6 +102,102 @@ export const quotes = [
   {
     text: "You cannot have strong faith without the Word.",
     author: "Kenneth E. Hagin",
+  },
+  // Joyce Meyer
+  {
+    text: "You cannot have a positive life and a negative mind.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "God's love is so great that He loves even the worst of us.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "I may not be where I need to be, but thank God I am not where I used to be.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "Patience is not the ability to wait, but how you act while you're waiting.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "Don't wait for everything to be perfect before you decide to enjoy your life.",
+    author: "Joyce Meyer",
+  },
+  { text: "Complain and remain. Praise and be raised.", author: "Joyce Meyer" },
+  {
+    text: "The mind is the battlefield. The devil fights his greatest battles there.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "If you are facing a new challenge, be open to trying new things.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "Stop being who you were and become who you are.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "Worry is a down payment on a problem you may never have.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "God wants to heal you where you are broken.",
+    author: "Joyce Meyer",
+  },
+  {
+    text: "Peace is one of the most valuable things you can possess.",
+    author: "Joyce Meyer",
+  },
+
+  // Kenneth Copeland
+  {
+    text: "Faith is not a feeling. Faith is a choice.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "God's Word is His bond. He cannot lie.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "You have the same faith that God has. Use it.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "The Word of God is alive and powerful in your mouth.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "Jesus bore your poverty that you might share His wealth.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "Your words are containers of power — fill them with faith.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "God is a faith God. He created the universe by faith-filled words.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "Don't talk about the problem. Talk about the answer — Jesus.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "The anointing destroys the yoke. Get in the presence of God.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "Stand on the Word. The Word will not fail you.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "Love never fails. Make love your lifestyle.",
+    author: "Kenneth Copeland",
+  },
+  {
+    text: "Prayer is not begging God. It is enforcing what Jesus already won.",
+    author: "Kenneth Copeland",
   },
   {
     text: "Faith will cause you to appear foolish to others sometimes.",

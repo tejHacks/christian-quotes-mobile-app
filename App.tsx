@@ -1,14 +1,15 @@
 // App.tsx
 
-import "./global.css";
+// import ".";
 import {
   View,
   Text,
   TouchableOpacity,
   StyleSheet,
   Animated,
-  SafeAreaView,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
 import { useState, useRef } from "react";
 import { useFonts } from "expo-font";
 import Svg, { Path, Circle, Polyline } from "react-native-svg";
@@ -147,14 +148,14 @@ export default function App() {
               />
             </Svg>
           </TouchableOpacity>
-
+          {/* 
           <View style={styles.counter}>
             <Text style={styles.counterText}>
               {index + 1}
               <Text style={styles.counterDivider}> / </Text>
               {quotes.length}
             </Text>
-          </View>
+          </View> */}
 
           <TouchableOpacity
             onPress={() => animateAndGo(1)}
