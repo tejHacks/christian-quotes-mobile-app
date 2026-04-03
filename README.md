@@ -1,9 +1,20 @@
 # ✨ BibleQuotes Mobile App
 
 ## Overview
+
 BibleQuotes is an elegantly designed mobile application built with React Native and Expo, offering users a curated collection of inspiring Bible quotes. It features a beautiful, responsive interface with smooth navigation and custom typography, providing a serene experience for daily reflection.
 
+## Screenshots
+
+<p align="center">
+  <img src="./assets/screenshots/faithquotes-2.png" width="30%" />
+  <img src="./assets/screenshots/faithquotes-3.png" width="30%" />
+  <img src="./assets/screenshots/faithquotes-5.png" width="30%" />
+  <img src="./assets/screenshots/image.png" width="30%" />
+  
+</p>
 ## Features
+
 - **Dynamic Quote Display**: Seamlessly browse through a rich collection of inspiring Bible quotes.
 - **Intuitive Navigation**: Effortlessly swipe left/right or use dedicated navigation buttons to move between quotes.
 - **Elegant UI/UX**: Experience a visually appealing design with custom fonts and subtle decorative elements, reminiscent of classic scripture.
@@ -39,38 +50,38 @@ Follow these steps to set up and run the BibleQuotes app on your local machine.
 
 Once the app is running, you will be greeted with the main screen displaying a Bible quote.
 
--   **Navigate Quotes**:
-    -   **Swipe**: Swipe left on the quote card to go to the next quote, and swipe right to go to the previous quote.
-    -   **Navigation Buttons**: Use the left (`<`) and right (`>`) arrow buttons located below the quote card to navigate through the quotes.
--   **Read and Reflect**: Enjoy the curated collection of quotes, presented with elegant typography and a calming visual theme.
+- **Navigate Quotes**:
+  - **Swipe**: Swipe left on the quote card to go to the next quote, and swipe right to go to the previous quote.
+  - **Navigation Buttons**: Use the left (`<`) and right (`>`) arrow buttons located below the quote card to navigate through the quotes.
+- **Read and Reflect**: Enjoy the curated collection of quotes, presented with elegant typography and a calming visual theme.
 
 ## Technologies Used
 
-| Technology         | Description                                        | Link                                                                      |
-| :----------------- | :------------------------------------------------- | :------------------------------------------------------------------------ |
-| **React Native**   | Open-source UI software framework for mobile apps. | [React Native](https://reactnative.dev/)                                  |
-| **Expo**           | Framework for universal React applications.        | [Expo](https://expo.dev/)                                                 |
-| **TypeScript**     | Superset of JavaScript that adds static typing.    | [TypeScript](https://www.org/)                                          |
-| **NativeWind**     | Tailwind CSS for React Native.                     | [NativeWind](https://www.nativewind.dev/)                                 |
+| Technology           | Description                                        | Link                                                                     |
+| :------------------- | :------------------------------------------------- | :----------------------------------------------------------------------- |
+| **React Native**     | Open-source UI software framework for mobile apps. | [React Native](https://reactnative.dev/)                                 |
+| **Expo**             | Framework for universal React applications.        | [Expo](https://expo.dev/)                                                |
+| **TypeScript**       | Superset of JavaScript that adds static typing.    | [TypeScript](https://www.org/)                                           |
+| **NativeWind**       | Tailwind CSS for React Native.                     | [NativeWind](https://www.nativewind.dev/)                                |
 | **React Native SVG** | SVG support for React Native.                      | [React Native SVG](https://github.com/react-native-svg/react-native-svg) |
-| **Expo Font**      | Load custom fonts for your app.                    | [Expo Font](https://docs.expo.dev/versions/latest/sdk/font/)              |
+| **Expo Font**        | Load custom fonts for your app.                    | [Expo Font](https://docs.expo.dev/versions/latest/sdk/font/)             |
 
 ## Contributing
 
 We welcome contributions to the BibleQuotes app! If you'd like to contribute, please follow these guidelines:
 
-*   💡 **Fork the repository**: Start by forking the project to your GitHub account.
-*   🌿 **Create a new branch**: Make your changes in a new branch, e.g., `feature/add-new-quotes` or `bugfix/fix-navigation`.
-*   🛠️ **Implement your changes**: Ensure your code adheres to the project's coding style.
-*   ✅ **Test thoroughly**: Verify that your changes work as expected and don't introduce new issues.
-*   ⬆️ **Commit your changes**: Write clear and descriptive commit messages.
-*   📬 **Open a Pull Request**: Submit a pull request to the `main` branch with a detailed description of your changes.
+- 💡 **Fork the repository**: Start by forking the project to your GitHub account.
+- 🌿 **Create a new branch**: Make your changes in a new branch, e.g., `feature/add-new-quotes` or `bugfix/fix-navigation`.
+- 🛠️ **Implement your changes**: Ensure your code adheres to the project's coding style.
+- ✅ **Test thoroughly**: Verify that your changes work as expected and don't introduce new issues.
+- ⬆️ **Commit your changes**: Write clear and descriptive commit messages.
+- 📬 **Open a Pull Request**: Submit a pull request to the `main` branch with a detailed description of your changes.
 
 ## Author Info
 
--   **Olateju Olamide --TejHacks**
-    -   LinkedIn: [@YourLinkedInUsername](https://www.linkedin.com/in/olateju-olamide-22314a292/)
-    -   X (formerly Twitter): [@YourTwitterHandle](https://x.com/OlatejuOlamid10)
+- **Olateju Olamide --TejHacks**
+  - LinkedIn: [Olateju Olamide](https://www.linkedin.com/in/olateju-olamide-22314a292/)
+  - X (formerly Twitter): [@OlatejuOlamid10](https://x.com/OlatejuOlamid10)
 
 ---
 
